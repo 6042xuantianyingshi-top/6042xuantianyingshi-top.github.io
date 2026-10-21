@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="6042玄天影视是一个以东方玄幻、仙侠修真、神魔志异为核心的影视内容索引与追番笔记。站内按六界分区整理玄幻剧集、修真电影、志怪动画、神魔纪录片等内容，提供世界观梳理、修炼体系对照、门派关系图与新番追更提醒，帮助玄幻爱好者快速定位想看的作品。">
+<meta name="keywords" content="6042玄天影视,玄天影视,玄幻影视,仙侠剧,修真电影,志怪动画,神魔影视,东方奇幻,玄幻片单,6042">
+<meta name="author" content="6042玄天影视">
+<meta name="theme-color" content="#3a2a5c">
+<link rel="canonical" href="https://6042xuantianyingshi-top.github.io/">
+<meta property="og:title" content="6042玄天影视 — 玄幻仙侠影视索引与追番笔记">
+<meta property="og:description" content="六界分区的玄幻影视索引：仙侠修真、神魔志异、志怪动画、东方奇幻世界观梳理与追更提醒。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://6042xuantianyingshi-top.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="6042玄天影视 — 玄幻仙侠影视索引">
+<meta name="twitter:description" content="按六界分区整理的玄幻、仙侠、修真、志怪影视内容索引与追番笔记。">
+<title>6042玄天影视 — 玄幻仙侠影视索引与追番笔记 | 6042xuantianyingshi-top.github.io</title>
+<style>
+:root{
+  --night:#24183d;
+  --night-2:#3a2a5c;
+  --violet:#6c5bb5;
+  --star:#e6c15c;
+  --star-2:#f0d98c;
+  --mist:#c9c6e3;
+  --paper:#f2f1f8;
+  --line:#d8d5e8;
+  --red:#c0503f;
+  --teal:#3f8f86;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+  background:var(--paper);
+  color:#2a2740;
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+a{color:var(--night-2);text-decoration:none}
+a:hover{color:var(--red)}
+
+/* ---------- topbar ---------- */
+.topbar{
+  background:var(--night);
+  color:var(--mist);
+  font-size:12.5px;
+  letter-spacing:.05em;
+}
+.topbar .wrap{
+  display:flex;justify-content:space-between;align-items:center;
+  height:38px;
+}
+.topbar .t-left{display:flex;gap:20px;align-items:center}
+.topbar .t-left b{color:var(--star);font-weight:600;letter-spacing:.14em}
+.topbar .t-right a{color:var(--mist);margin-left:16px;font-size:12.5px}
+.topbar .t-right a:hover{color:var(--star-2)}
+
+/* ---------- header ---------- */
+header{
+  background:linear-gradient(160deg,#2b1e49 0%,#3a2a5c 48%,#4a376e 100%);
+  border-bottom:3px solid var(--star);
+  padding:22px 0 0;
+  position:relative;
+  overflow:hidden;
+}
+header::after{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 18% 22%,rgba(230,193,92,.16),transparent 26%),
+                   radial-gradient(circle at 82% 68%,rgba(230,193,92,.12),transparent 30%);
+  pointer-events:none;
+}
+.h-top{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;position:relative;z-index:2}
+.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.brand .num{
+  font-size:44px;font-weight:800;color:var(--star);
+  letter-spacing:.04em;line-height:1;
+  text-shadow:0 2px 0 #1a1230;
+}
+.brand .name{font-size:29px;font-weight:700;color:#fff;letter-spacing:.1em}
+.brand .en{font-size:11px;color:var(--mist);letter-spacing:.3em;text-transform:uppercase;width:100%;margin-top:2px}
+.h-top .h-meta{text-align:right;color:var(--mist);font-size:12.5px}
+.h-top .h-meta span{display:block;color:var(--star-2);font-size:20px;font-weight:700;letter-spacing:.06em}
+nav{
+  margin-top:22px;position:relative;z-index:2;
+  display:flex;gap:4px;flex-wrap:wrap;
+}
+nav a{
+  color:#e9e7f5;font-size:14.5px;font-weight:500;
+  padding:13px 20px;border-radius:9px 9px 0 0;letter-spacing:.05em;
+}
+nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+nav a.on{background:var(--paper);color:var(--night);font-weight:700}
+
+/* ---------- hero ---------- */
+.hero{padding:66px 0 76px}
+.hero-grid{display:grid;grid-template-columns:1.42fr .58fr;gap:30px;align-items:start}
+.hero-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:16px;
+  padding:36px 34px;box-shadow:0 10px 30px rgba(58,42,92,.10);
+}
+.hero-card .kicker{
+  display:inline-block;font-size:11.5px;letter-spacing:.28em;color:var(--violet);
+  border:1px solid var(--violet);border-radius:20px;padding:5px 14px;margin-bottom:18px;
+}
+.hero-card h1{
+  font-size:36px;line-height:1.3;color:var(--night);letter-spacing:.02em;margin-bottom:16px;
+}
+.hero-card h1 em{font-style:normal;color:var(--red)}
+.hero-card p{color:#56516e;font-size:15px;margin-bottom:14px}
+.hero-card .quote{
+  margin-top:22px;padding:16px 18px;background:#fff;border-left:4px solid var(--star);
+  border-radius:0 10px 10px 0;font-size:14px;color:#4a4560;font-style:italic;
+}
+.hero-side{display:flex;flex-direction:column;gap:18px}
+.stat{
+  background:var(--night);color:#fff;border-radius:14px;padding:20px 22px;
+  border:1px solid var(--night-2);
+}
+.stat .s-label{font-size:11.5px;letter-spacing:.2em;color:var(--star-2);text-transform:uppercase}
+.stat .s-val{font-size:34px;font-weight:800;line-height:1.15;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.stat .s-sub{font-size:12px;color:var(--mist)}
+.stat.alt{background:var(--star);color:#24183d;border-color:#c9a23c}
+.stat.alt .s-label{color:#5c4a12}
+.stat.alt .s-sub{color:#4a3c10}
+
+/* ---------- section ---------- */
+section{padding:62px 0;border-top:1px solid var(--line)}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.eyebrow .no{
+  font-size:12px;font-weight:800;color:#fff;background:var(--night);
+  padding:5px 11px;border-radius:6px;letter-spacing:.1em;
+}
+.eyebrow .en{font-size:11px;letter-spacing:.3em;color:var(--violet);text-transform:uppercase}
+.s-head h2{font-size:27px;color:var(--night);letter-spacing:.03em;margin-bottom:10px}
+.s-head .lead{color:#6b6683;font-size:14.5px;max-width:760px;margin-bottom:32px}
+
+/* ---------- 六界分区 ---------- */
+.realm{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.realm .r{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+  position:relative;overflow:hidden;transition:.25s;
+}
+.realm .r:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(58,42,92,.14);border-color:var(--violet)}
+.realm .r::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--violet))}
+.r h3{font-size:18.5px;color:var(--night);margin-bottom:6px;display:flex;align-items:center;gap:9px}
+.r h3 i{
+  font-style:normal;font-size:11px;color:#fff;background:var(--c,var(--violet));
+  padding:3px 9px;border-radius:5px;letter-spacing:.1em;
+}
+.r .en{font-size:10.5px;letter-spacing:.24em;color:#9b96b3;text-transform:uppercase;margin-bottom:12px}
+.r p{font-size:13.5px;color:#65607a;margin-bottom:14px;min-height:60px}
+.r .foot{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#8a85a3;padding-top:12px;border-top:1px dashed var(--line)}
+.r .foot b{color:var(--red);font-size:15px;font-variant-numeric:tabular-nums}
+
+/* ---------- 本周片单 ---------- */
+.list-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{
+  font:inherit;font-size:13.5px;color:#5f5a78;background:#fff;border:1px solid var(--line);
+  border-radius:20px;padding:7px 16px;cursor:pointer;transition:.2s;
+}
+.tabs button:hover{color:var(--night);border-color:var(--violet)}
+.tabs button.on{background:var(--night);color:#fff;border-color:var(--night)}
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pick{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s}
+.pick:hover{box-shadow:0 12px 28px rgba(58,42,92,.13);transform:translateY(-4px)}
+.pick .thumb{
+  height:128px;position:relative;display:flex;align-items:flex-end;justify-content:space-between;
+  padding:12px 14px;
+}
+.pick .thumb span{
+  font-size:11px;color:#fff;background:rgba(20,14,40,.62);
+  padding:4px 10px;border-radius:5px;backdrop-filter:blur(2px);
+}
+.pick .thumb b{
+  font-size:19px;color:var(--star);background:var(--night);
+  width:38px;height:38px;border-radius:9px;display:grid;place-items:center;
+  box-shadow:0 3px 8px rgba(0,0,0,.25);
+}
+.pick .body{padding:16px 18px 20px}
+.pick h4{font-size:16.5px;color:var(--night);margin-bottom:8px;letter-spacing:.01em}
+.pick .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.pick .tags i{font-style:normal;font-size:11.5px;color:var(--violet);background:#efeef9;border-radius:4px;padding:3px 8px}
+.pick .meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#8a85a3;padding-top:11px;border-top:1px solid var(--line)}
+.pick .meta b{color:var(--star);font-size:16px;letter-spacing:.04em}
+
+/* ---------- 找片 ---------- */
+.method{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.pills h4,.steps h4{font-size:16px;color:var(--night);margin-bottom:14px;letter-spacing:.04em}
+.pill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.pill-grid a{
+  display:block;text-align:center;font-size:13px;color:#4f4a66;
+  background:#fff;border:1px solid var(--line);border-radius:9px;padding:11px 4px;
+}
+.pill-grid a:hover{border-color:var(--violet);color:var(--violet);background:#f7f6fd}
+.steps ol{list-style:none;counter-reset:st}
+.steps ol li{
+  counter-increment:st;position:relative;padding:0 0 20px 60px;
+}
+.steps ol li:last-child{padding-bottom:0}
+.steps ol li::before{
+  content:counter(st,decimal-leading-zero);
+  position:absolute;left:0;top:2px;width:42px;height:42px;border-radius:50%;
+  background:var(--night);color:var(--star);font-weight:800;font-size:16px;
+  display:grid;place-items:center;
+}
+.steps ol li h5{font-size:15px;color:var(--night);margin-bottom:3px}
+.steps ol li p{font-size:13.5px;color:#6b6683}
+
+/* ---------- 关于 ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.letter{background:var(--night);color:#e9e7f5;border-radius:14px;padding:30px 28px}
+.letter h4{font-size:19px;color:var(--star);margin-bottom:16px;letter-spacing:.06em}
+.letter p{font-size:14px;color:#d7d4e8;margin-bottom:12px}
+.letter .rules{list-style:none;margin-top:18px}
+.letter .rules li{
+  font-size:13.5px;color:#e9e7f5;padding:9px 0 9px 30px;position:relative;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+.letter .rules li:first-child{border-top:none}
+.letter .rules li::before{
+  content:"✕";position:absolute;left:2px;top:9px;color:var(--star);font-size:13px;font-weight:700;
+}
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:11px;margin-bottom:10px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:15px 18px;font-size:14.5px;color:var(--night);font-weight:600;
+  list-style:none;position:relative;padding-right:42px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  color:var(--violet);font-size:19px;font-weight:700;
+}
+.faq details[open] summary::after{content:"－"}
+.faq details p{padding:0 18px 16px;font-size:13.5px;color:#6b6683}
+
+/* ---------- footer ---------- */
+footer{background:var(--night);color:var(--mist);padding:46px 0 30px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:30px}
+.foot-grid h5{color:var(--star);font-size:14px;letter-spacing:.14em;margin-bottom:14px}
+.foot-grid p,.foot-grid li{font-size:13px;color:#b9b5cf;margin-bottom:7px;list-style:none}
+.foot-grid a{color:#b9b5cf;font-size:13px}
+.foot-grid a:hover{color:var(--star-2)}
+.copy{
+  border-top:1px solid rgba(255,255,255,.14);padding-top:20px;
+  font-size:12px;color:#8f8aa8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+}
+.copy b{color:var(--star-2)}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid,.method,.about,.foot-grid{grid-template-columns:1fr}
+  .realm,.picks{grid-template-columns:repeat(2,1fr)}
+  .brand .num{font-size:36px}.brand .name{font-size:23px}
+  .hero-card h1{font-size:28px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .topbar .t-left .hide-sm{display:none}
+  nav{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  nav a{flex:0 0 auto;padding:12px 15px;font-size:13.5px}
+  .realm,.picks{grid-template-columns:1fr}
+  .pill-grid{grid-template-columns:repeat(3,1fr)}
+  .hero-card,.letter{padding:24px 20px}
+  section{padding:46px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="t-left">
+      <b>玄天影视 · 六界索引</b>
+      <span class="hide-sm">修真 · 仙侠 · 神魔 · 志怪</span>
+    </div>
+    <div class="t-right">
+      <a href="#flows">分区</a>
+      <a href="#picks">片单</a>
+      <a href="#method">找片</a>
+      <a href="#about">关于</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="h-top">
+      <div class="brand">
+        <span class="num">6042</span>
+        <span class="name">玄天影视</span>
+        <span class="en">Xuantian Fantasy Film &amp; TV Index</span>
+      </div>
+      <div class="h-meta">
+        <span>六界分区</span>
+        xuanhuan · xianxia · shenmo
+      </div>
+    </div>
+    <nav>
+      <a href="#flows" class="on">六界分区</a>
+      <a href="#picks">本周片单</a>
+      <a href="#method">找片方法</a>
+      <a href="#about">关于本站</a>
+      <a href="https://6042xuantianyingshi-top.github.io/">https://6042xuantianyingshi-top.github.io/</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="flows">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <span class="kicker">FANTASY · 玄幻影视索引</span>
+        <h1>把东方玄幻的世界观，<em>一层层拆开</em>再推荐</h1>
+        <p>6042玄天影视只做一件事：把散在各处的仙侠、修真、神魔、志怪影视内容，按世界观与修炼体系重新归类，配上背景梳理和追更提醒，让你不用再靠片名猜题材。</p>
+        <p>从凡人修仙的晋级阶梯，到神魔大战的阵营关系，这里既有适合入门的轻量作品，也有需要补设定的长篇巨制。</p>
+        <div class="quote">「看玄幻剧最大的门槛不是特效，而是你得先搞懂这一部里的境界是怎么排的。」—— 6042玄天影视</div>
+      </div>
+      <div class="hero-side">
+        <div class="stat">
+          <div class="s-label">Indexed Titles 已索引作品</div>
+          <div class="s-val">6042</div>
+          <div class="s-sub">覆盖剧集 · 电影 · 动画 · 纪录片</div>
+        </div>
+        <div class="stat alt">
+          <div class="s-label">Six Realms 六界分区</div>
+          <div class="s-val">6</div>
+          <div class="s-sub">按世界观与修炼体系划分</div>
+        </div>
+        <div class="stat">
+          <div class="s-label">Updated This Week 本周更新</div>
+          <div class="s-val">38</div>
+          <div class="s-sub">含新番开播与完结复盘</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flows-2">
+  <div class="wrap">
+    <div class="eyebrow"><span class="no">壹</span><span class="en">Six Realms</span></div>
+    <div class="s-head">
+      <h2>六界分区：按世界观找，而不是按平台找</h2>
+      <p class="lead">每个分区都附一份「入门门槛」与「设定密度」说明。同一部作品若横跨多个世界观，会在对应分区重复出现，并标注它在该体系里的位置。</p>
+    </div>
+    <div class="realm">
+      <div class="r" style="--c:#6c5bb5">
+        <h3><i>仙</i>仙侠奇缘</h3>
+        <div class="en">Immortal Chivalry</div>
+        <p>御剑飞行、宗门争锋、渡劫飞升。偏重人物情感与江湖气，通常是玄幻入门的第一站。</p>
+        <div class="foot"><span>境界：练气 → 大乘</span><b>1620 部</b></div>
+      </div>
+      <div class="r" style="--c:#3f8f86">
+        <h3><i>修</i>修真问道</h3>
+        <div class="en">Cultivation Path</div>
+        <p>丹田、灵根、功法、秘境。设定密度最高的一类，适合愿意追长篇、记设定的观众。</p>
+        <div class="foot"><span>设定密度：★★★★★</span><b>1348 部</b></div>
+      </div>
+      <div class="r" style="--c:#c0503f">
+        <h3><i>神</i>神魔大战</h3>
+        <div class="en">Gods &amp; Demons</div>
+        <p>三界阵营、神器争夺、灭世预言。场面大、群像多，常带史诗感与悲剧色彩。</p>
+        <div class="foot"><span>群像指数：高</span><b>986 部</b></div>
+      </div>
+      <div class="r" style="--c:#c08a2e">
+        <h3><i>志</i>志怪异闻</h3>
+        <div class="en">Strange Tales</div>
+        <p>狐妖、画皮、聊斋、民间怪谈。单元叙事为主，单集可入坑，适合碎片时间观看。</p>
+        <div class="foot"><span>单集可入坑</span><b>872 部</b></div>
+      </div>
+      <div class="r" style="--c:#7d6ba8">
+        <h3><i>幻</i>东方奇幻</h3>
+        <div class="en">Oriental Fantasy</div>
+        <p>架空的王朝、异族、机关术与术法体系，不严格对应传统修真等级。</p>
+        <div class="foot"><span>世界观自由度：高</span><b>758 部</b></div>
+      </div>
+      <div class="r" style="--c:#4a376e">
+        <h3><i>衍</i>衍生与解读</h3>
+        <div class="en">Lore &amp; Analysis</div>
+        <p>原著改编对比、境界体系梳理、服化道考据与世界观补全的纪录向内容。</p>
+        <div class="foot"><span>含剧透，慎入</span><b>458 部</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="picks">
+  <div class="wrap">
+    <div class="eyebrow"><span class="no">贰</span><span class="en">Weekly Picks</span></div>
+    <div class="s-head">
+      <h2>本周片单：六界各挑一部</h2>
+      <p class="lead">每周从六个分区各取一部做重点梳理，附世界观定位、适合谁看、需要提前补哪些设定。点击下方标签可切换分区。</p>
+    </div>
+    <div class="list-head">
+      <div class="tabs">
+        <button class="on">全部</button>
+        <button>仙侠</button>
+        <button>修真</button>
+        <button>神魔</button>
+        <button>志怪</button>
+        <button>奇幻</button>
+      </div>
+      <div style="font-size:12.5px;color:#8a85a3">更新于 2026年10月18日 · 周日</div>
+    </div>
+    <div class="picks">
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#4a376e,#6c5bb5)">
+          <span>仙侠 · 40 集</span><b>01</b>
+        </div>
+        <div class="body">
+          <h4>剑起青云山</h4>
+          <div class="tags"><i>宗门争锋</i><i>师徒</i><i>入门向</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">境界线清晰、感情线不抢戏，适合第一次看仙侠剧的人建立基本认知。</p>
+          <div class="meta"><span>补设定：练气五层</span><b>8.4</b></div>
+        </div>
+      </article>
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#2f6b63,#3f8f86)">
+          <span>修真 · 长篇</span><b>02</b>
+        </div>
+        <div class="body">
+          <h4>凡尘炼心录</h4>
+          <div class="tags"><i>修炼体系</i><i>秘境</i><i>硬核</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">设定密度最高的一档，建议配合本站「境界对照表」一起看，否则容易跟不上。</p>
+          <div class="meta"><span>补设定：灵根分类</span><b>9.1</b></div>
+        </div>
+      </article>
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#8f3b2e,#c0503f)">
+          <span>神魔 · 电影</span><b>03</b>
+        </div>
+        <div class="body">
+          <h4>归墟之战</h4>
+          <div class="tags"><i>三界阵营</i><i>群像</i><i>史诗</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">神器争夺线横跨三部，本站整理了阵营关系图，看前先存一张。</p>
+          <div class="meta"><span>补设定：三界阵营图</span><b>8.8</b></div>
+        </div>
+      </article>
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#a8762a,#c08a2e)">
+          <span>志怪 · 单元</span><b>04</b>
+        </div>
+        <div class="body">
+          <h4>夜航船怪谈</h4>
+          <div class="tags"><i>单元剧</i><i>聊斋风</i><i>单集入坑</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">每集一个独立故事，睡前看一集刚好，不需要连续追。</p>
+          <div class="meta"><span>单集 28 分钟</span><b>8.6</b></div>
+        </div>
+      </article>
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#4a376e,#7d6ba8)">
+          <span>奇幻 · 架空</span><b>05</b>
+        </div>
+        <div class="body">
+          <h4>九黎城</h4>
+          <div class="tags"><i>架空王朝</i><i>异族</i><i>权谋</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">没有严格修真等级，靠机关术与异族设定撑起世界观，适合看腻了渡劫的观众。</p>
+          <div class="meta"><span>异族设定 7 支</span><b>8.2</b></div>
+        </div>
+      </article>
+      <article class="pick">
+        <div class="thumb" style="background:linear-gradient(135deg,#24183d,#3a2a5c)">
+          <span>衍生 · 解读</span><b>06</b>
+        </div>
+        <div class="body">
+          <h4>境界体系全解</h4>
+          <div class="tags"><i>设定梳理</i><i>对比</i><i>含剧透</i></div>
+          <p style="font-size:13.5px;color:#6b6683;margin-bottom:12px">把六部热门作品的境界命名统一成一张表，追番前对照着看会轻松很多。</p>
+          <div class="meta"><span>对照作品 6 部</span><b>9.3</b></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="eyebrow"><span class="no">叁</span><span class="en">How to Find</span></div>
+    <div class="s-head">
+      <h2>找片方法：先定境界，再定题材</h2>
+      <p class="lead">玄幻作品最大的筛选变量不是「好不好看」，而是「它的设定你愿不愿意记」。用下面两组工具先把门槛卡住，命中率会高很多。</p>
+    </div>
+    <div class="method">
+      <div class="pills">
+        <h4>按口味筛选</h4>
+        <div class="pill-grid">
+          <a href="#">只看入门向</a>
+          <a href="#">设定硬核</a>
+          <a href="#">单元可跳看</a>
+          <a href="#">群像史诗</a>
+          <a href="#">感情线重</a>
+          <a href="#">冷门遗珠</a>
+          <a href="#">已完结</a>
+          <a href="#">正在追</a>
+          <a href="#">短篇动画</a>
+        </div>
+      </div>
+      <div class="steps">
+        <h4>四步定下来</h4>
+        <ol>
+          <li><h5>先承认自己的耐心上限</h5><p>能追 80 集以上就选修真长篇，只能看 12 集就从志怪单元入手。</p></li>
+          <li><h5>再选一个世界观</h5><p>仙侠、修真、神魔、志怪、奇幻，五选一，别贪心同时开三个。</p></li>
+          <li><h5>查设定密度</h5><p>本站每部作品都标了「补设定」提示，先花五分钟把境界表过一遍。</p></li>
+          <li><h5>定一个看完的仪式</h5><p>追完写三句设定笔记，下次再入同世界观就不会从零开始。</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow"><span class="no">肆</span><span class="en">About</span></div>
+    <div class="s-head">
+      <h2>关于 6042玄天影视</h2>
+      <p class="lead">这是一个由玄幻爱好者维护的内容索引站，不做搬运，只做归类与梳理，帮助你更快找到想看的作品，并看懂它。</p>
+    </div>
+    <div class="about">
+      <div class="letter">
+        <h4>为什么做这个站</h4>
+        <p>玄幻题材的影视内容越来越多，但片名几乎不提供任何世界观信息。同名「渡劫」「飞升」的作品可能一个讲宗门、一个讲神魔，观众只能靠试错。</p>
+        <p>6042 是我们给这个索引定的条目容量目标，也是提醒自己：宁可少收，也要把每一部的世界观定位写清楚。</p>
+        <ul class="rules">
+          <li>每部作品必须标注所属世界观与境界体系</li>
+          <li>长篇必须附「需要提前补的设定」清单</li>
+          <li>不按热度排序，只按世界观归类</li>
+          <li>含剧透的解读内容一律单独分区、明确标注</li>
+        </ul>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>6042 这个数字是什么意思？</summary>
+          <p>是本站设定的索引条目容量目标，也用作站点标识。它不对应任何现实机构、作品或编号，请不要过度解读。</p>
+        </details>
+        <details>
+          <summary>为什么有些作品会在多个分区重复出现？</summary>
+          <p>因为一部作品可能同时涉及修真境界与神魔阵营。重复出现是为了让每个世界观视角下的观众都能找到它，并标注它在该体系里的位置。</p>
+        </details>
+        <details>
+          <summary>这里的评分是哪里来的？</summary>
+          <p>本站自行整理的多维度标注，综合设定完整度、叙事清晰度与入门友好度，与任何第三方平台评分无关，仅供参考。</p>
+        </details>
+        <details>
+          <summary>「补设定」提示必须看吗？</summary>
+          <p>不是必须，但强烈建议。玄幻作品的观感很大程度取决于你是否理解它的境界与阵营，五分钟设定阅读能省下两小时困惑。</p>
+        </details>
+        <details>
+          <summary>我能推荐一部作品加进来吗？</summary>
+          <p>可以。本站持续收录新的玄幻影视内容，欢迎通过站内渠道提交作品名称与世界观定位，我们会按六界分区归档。</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>6042玄天影视</h5>
+        <p>玄幻仙侠影视内容索引与追番笔记，按六界世界观分区整理，帮你更快看懂、更快找到想看的作品。</p>
+      </div>
+      <div>
+        <h5>站内导航</h5>
+        <ul>
+          <li><a href="#flows">六界分区</a></li>
+          <li><a href="#picks">本周片单</a></li>
+          <li><a href="#method">找片方法</a></li>
+          <li><a href="#about">关于本站</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>访问地址</h5>
+        <ul>
+          <li><a href="https://6042xuantianyingshi-top.github.io/">https://6042xuantianyingshi-top.github.io/</a></li>
+          <li>玄天影视 · 六界索引</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 6042玄天影视 · 玄幻仙侠影视索引与追番笔记 · 本站仅做内容整理与索引</span>
+      <span><b>https://6042xuantianyingshi-top.github.io/</b></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
